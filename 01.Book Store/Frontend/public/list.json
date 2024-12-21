@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "The Great Gatsby",
+    "description": "A classic novel by F. Scott Fitzgerald, exploring themes of wealth, love, and the American Dream.",
+    "category": "love",
+    "price": 10.99,
+    "image": "https://example.com/images/gatsby.jpg"
+  },
+  {
+    "id": 2,
+    "name": "1984",
+    "description": "George Orwell's dystopian novel about a totalitarian regime and the dangers of surveillance.",
+    "category": "political",
+    "price": 8.99,
+    "image": "https://example.com/images/1984.jpg"
+  },
+  {
+    "id": 3,
+    "name": "To Kill a Mockingbird",
+    "description": "Harper Lee's tale of racial injustice and childhood innocence in the Deep South.",
+    "category": "drama",
+    "price": 0,
+    "image": "https://example.com/images/mockingbird.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pride and Prejudice",
+    "description": "Jane Austen's romantic novel about manners, marriage, and social class.",
+    "category": "romance",
+    "price": 12.50,
+    "image": "https://example.com/images/pride.jpg"
+  },
+  {
+    "id": 5,
+    "name": "The Alchemist",
+    "description": "Paulo Coelho's philosophical novel about following your dreams and finding your personal legend.",
+    "category": "inspiration",
+    "price": 9.99,
+    "image": "https://example.com/images/alchemist.jpg"
+  },
+  {
+    "id": 6,
+    "name": "The Catcher in the Rye",
+    "description": "J.D. Salinger's story of teenage rebellion and self-discovery.",
+    "category": "coming-of-age",
+    "price": 0,
+    "image": "https://example.com/images/catcher.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Moby Dick",
+    "description": "Herman Melville's epic tale of obsession and revenge against the great white whale.",
+    "category": "adventure",
+    "price": 11.25,
+    "image": "https://example.com/images/mobydick.jpg"
+  },
+  {
+    "id": 8,
+    "name": "War and Peace",
+    "description": "Leo Tolstoy's monumental novel of love, war, and the human spirit.",
+    "category": "historical",
+    "price": 0,
+    "image": "https://example.com/images/warpeace.jpg"
+  },
+  {
+    "id": 9,
+    "name": "The Hobbit",
+    "description": "J.R.R. Tolkien's fantasy adventure preceding The Lord of the Rings.",
+    "category": "fantasy",
+    "price": 15.00,
+    "image": "https://example.com/images/hobbit.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Frankenstein",
+    "description": "Mary Shelley's gothic novel about the consequences of playing God.",
+    "category": "horror",
+    "price": 0,
+    "image": "https://example.com/images/frankenstein.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Sports Book",
+    "description": "A comprehensive guide to the world of sports, from history to modern-day achievements.",
+    "category": "sports",
+    "price": 20.00,
+    "image": "https://example.com/images/sportsbook.jpg"
+  },
+  {
+    "id": 12,
+    "name": "The Art of War",
+    "description": "An ancient Chinese military treatise by Sun Tzu, emphasizing strategic thinking and warfare.",
+    "category": "philosophy",
+    "price": 18.99,
+    "image": "https://example.com/images/artofwar.jpg"
+  },
+  {
+    "id": 13,
+    "name": "A Journey Through Time",
+    "description": "A science fiction novel that explores the concept of time travel and its implications.",
+    "category": "sci-fi",
+    "price": 9.49,
+    "image": "https://example.com/images/journeytime.jpg"
+  },
+  {
+    "id": 14,
+    "name": "The Love Letters",
+    "description": "A collection of heartfelt love letters throughout history, capturing the essence of love.",
+    "category": "love",
+    "price": 5.99,
+    "image": "https://example.com/images/loveletters.jpg"
+  },
+  {
+    "id": 15,
+    "name": "The History of Cinema",
+    "description": "An insightful history of the development of cinema, from its beginnings to the modern era.",
+    "category": "entertainment",
+    "price": 0,
+    "image": "https://example.com/images/cinema.jpg"
+  }
+]
