@@ -7,6 +7,8 @@ import SignUp from './components/SignUp';
 import SignIn from './components/SignIn';
 import { Toaster } from 'react-hot-toast';
 import { useAuth } from './context/AuthProvider';
+import About from './components/About';
+import ContactUs from './components/ContactUs.jsx'
 
 function App() {
 
@@ -21,6 +23,9 @@ function App() {
         <Route path='all-Books' element={authUser ? <AllBooks /> : <Navigate to="/signup" />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="/signIn" element={<SignIn />} />
+        {/* <Route path="/signIn" element={<SignIn />} /> */}
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Toaster />
       <Footer />

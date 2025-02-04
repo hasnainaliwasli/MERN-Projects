@@ -45,7 +45,7 @@ function Navbar() {
   const menuList = (
     <>
       <li><Link to="/">Home</Link></li>
-      <li><Link to="/all-books">All Books</Link></li>
+      <li><Link to="/all-books">All Things</Link></li>
       <li><Link to="/contact">Contact</Link></li>
       <li><Link to="/about">About</Link></li>
     </>
@@ -66,7 +66,7 @@ function Navbar() {
               {menuList}
             </ul>
           </div>
-          <Link to="/" className="btn btn-ghost text-2xl font-bold">BOOK STORE</Link>
+          <Link to="/" className="btn btn-ghost text-2xl font-bold">MY STORE</Link>
         </div>
         {/* Big Screen Menu */}
         <div className="navbar-end space-x-3">
