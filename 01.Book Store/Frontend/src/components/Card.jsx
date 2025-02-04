@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Card({ item }) {
-  console.log(item)
+  // console.log(item)
   return (
     // <div >
     <div className="card md:w-11/12 w-auto h-96 my-3 shadow-xl hover:scale-105 duration-200 cursor-pointer ">

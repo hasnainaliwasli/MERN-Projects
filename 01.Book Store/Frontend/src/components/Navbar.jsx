@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Login from './SignInModel';
+import Logout from './Logout';
+import { useAuth } from './../context/AuthProvider';
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") || "light"
   );
+  const [authUser, setAuthUser] = useAuth()
 
   // Handle theme changes
   useEffect(() => {
@@ -97,7 +100,9 @@ function Navbar() {
           </label>
 
           {/* Login Button */}
-          <Link to="/signIn" className="bg-pink-500 hover:bg-pink-600 cursor-pointer text-white py-1 px-3 rounded-lg">Login</Link>
+
+          {authUser ? <Logout /> :
+            <Link to="/signIn" className="bg-pink-500 hover:bg-pink-600 cursor-pointer text-white py-1 px-3 rounded-lg">Login</Link>}
         </div>
 
       </div>

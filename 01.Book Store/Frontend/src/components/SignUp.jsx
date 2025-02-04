@@ -1,18 +1,44 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import axios from 'axios'
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 export default function SignUp() {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const navigate = useNavigate()
 
-  const onSubmit = (data) => {
-    console.log(data); // Replace with API call or further logic
+  const onSubmit = async (data) => {
+    const userInfo = {
+      fullname: data.username,
+      email: data.email,
+      password: data.password
+    }
+
+    await axios.post("http://localhost:3000/user/signup", userInfo)
+      .then((res) => {
+        console.log("Response from API in Signup", res.data);
+        if (res.data) {
+          toast.success("Signup Successful")
+          navigate("/signin")
+        }
+        // localStorage.setItem('users', JSON.stringify(res.data.user))
+      }).catch((err) => {
+        if (err.response) {
+          console.log("error in signup", err)
+          // alert(err.response.data.message)
+          toast.error(err.response.data.message)
+        }
+      })
+
+    console.log(data);
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white shadow-lg rounded-lg w-full max-w-md p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800">Sign Up</h2>
-        
+
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col mt-6">
           {/* Username Field */}
           <input

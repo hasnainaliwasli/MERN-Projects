@@ -1,11 +1,38 @@
+import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function SignIn() {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data) => {
-    console.log(data);
+  const naviagte = useNavigate()
+  const onSubmit = async (data) => {
+
+    const userInfo = {
+      fullname: data.username,
+      email: data.email,
+      password: data.password
+    }
+
+    await axios.post("http://localhost:3000/user/signin", userInfo)
+      .then((res) => {
+        console.log("Signin Response: ", res.data)
+        if (res.data) {
+          toast.success("Signin Successful")
+          naviagte('/')
+          window.location.reload()
+        }
+        localStorage.setItem('users', JSON.stringify(res.data.user))
+      }).catch((err) => {
+        if (err.response) {
+          console.log("Something went wrong", err)
+          toast.error(err.response.data.message)
+        }
+      })
+
   }
 
   return (
